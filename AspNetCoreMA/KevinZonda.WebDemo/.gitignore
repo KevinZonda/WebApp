@@ -1,0 +1,6 @@
+.vs/
+.vscode/
+.fleet/
+.idea/
+**/obj/
+**/bin/

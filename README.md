@@ -6,5 +6,6 @@ frameworks.
 | Framework | Language |
 |-----------|----------|
 | [Spring Boot](SpringBoot) | Java |
+| [ASP.NET Core (Minimal API)](AspNetCoreMA) | C# |
 | [Gin](Gin) | Go |
 | [Express](Express) | JavaScript |
