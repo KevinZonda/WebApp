@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 var q []string
@@ -12,7 +13,7 @@ type PushQueueModel struct {
 }
 
 func containsKey(v string) bool {
-	if q == nil || len(q) == 0 {
+	if len(q) == 0 {
 		return false
 	}
 	for _, qv := range q {
@@ -43,6 +44,7 @@ func main() {
 		if err != nil {
 			// bind failed!
 			c.String(http.StatusBadRequest, "Not Valid Request!")
+			return
 		}
 		if containsKey(pm.Content) {
 			c.String(http.StatusConflict, "duplicated")
