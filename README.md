@@ -10,6 +10,7 @@ frameworks.
 | [Gin](Gin) | Go | [code](https://github.com/KevinZonda/WebDemo/blob/master/Gin/WebDemo/main.go) |
 | [Express](Express) | JavaScript | [code](https://github.com/KevinZonda/WebDemo/blob/master/Express/index.js) |
 
+Test script: [test.sh](./test.sh)
 
 ## API Docs
 
