@@ -10,7 +10,7 @@ app.MapGet("/getQueue", () => queue);
 app.MapPost("/pushQueue", (PushQueueModel<string> pm) =>
 {
     if (pm == null) return Results.BadRequest();
-    if (queue.Contains(pm.Content)) Results.Conflict("duplicated");
+    if (queue.Contains(pm.Content)) return Results.Conflict("duplicated");
     queue.Enqueue(pm.Content);
     return Results.Ok();
 });
